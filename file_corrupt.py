@@ -1,7 +1,7 @@
 def isFileCorrupt(file_path, signiture):
 	try:
 		with open(file_path, "rb") as file:
-			actual_signiture = file.read(len(signiture)
+			actual_signiture = file.read(len(signiture))
 			return actual_signiture == signiture
 	except FileNotFoundError:
 		print(f"File not found: {file_path}")
